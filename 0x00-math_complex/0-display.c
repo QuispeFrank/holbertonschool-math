@@ -11,11 +11,10 @@
  */
 void display_complex_number(complex c)
 {
-	/* impresion de la parte real */
+	/* prints the real part */
 	printf("%g", c.re);
-	/* impresion de la parte imaginaria */
 
-	/* caso 1 */
+	/* prints the imaginary part */
 	if (c.im == 1)
 		printf(" + i\n");
 	else if (c.im == -1)
