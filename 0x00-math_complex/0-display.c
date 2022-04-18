@@ -11,26 +11,19 @@
  */
 void display_complex_number(complex c)
 {
-	/* re && im == 0? */
-	if (c.re == 0 && c.im == 0)
-	{
-		printf("%d\n", 0);
-		return;
-	}
-	/* im = 0? */
-	if (c.im == 0)
-	{
-		printf("%g\n", c.re);
-		return;
-	}
-	/* re = 0? */
-	if (c.re == 0)
-	{
-		printf("%gi\n", c.im);
-		return;
-	}
-	if (c.im < 0)
-		printf("%g - %gi\n", c.re, -1 * c.im);
+	/* impresion de la parte real */
+	printf("%g", c.re);
+	/* impresion de la parte imaginaria */
+
+	/* caso 1 */
+	if (c.im == 1)
+		printf(" + i\n");
+	else if (c.im == -1)
+		printf(" - i\n");
+	else if (c.im < 0)
+		printf(" - %gi\n", -1 * c.im);
+	else if (c.im > 0)
+		printf(" + %gi\n", c.im);
 	else
-		printf("%g + %gi\n", c.re, c.im);
+		printf("\n");
 }
