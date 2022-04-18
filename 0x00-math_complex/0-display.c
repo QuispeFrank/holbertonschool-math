@@ -1,5 +1,14 @@
 #include "holberton.h"
 
+/**
+ * display_complex_number - a function that displays a complex number.
+ * @c: structure that contains re and im values.
+ *
+ * Description: a function that displays the complex numbers,
+ * followed by a new line.
+ *
+ * Return: nothing.
+ */
 void display_complex_number(complex c)
 {
 	/* re && im == 0? */
