@@ -16,13 +16,13 @@ void display_complex_number(complex c)
 
 	/* prints the imaginary part */
 	if (c.im == 1)
-		printf(" + i\n");
+		printf(" + i");
 	else if (c.im == -1)
-		printf(" - i\n");
+		printf(" - i");
 	else if (c.im < 0)
-		printf(" - %gi\n", -1 * c.im);
+		printf(" - %gi", -1 * c.im);
 	else if (c.im > 0)
-		printf(" + %gi\n", c.im);
-	else
-		printf("\n");
+		printf(" + %gi", c.im);
+
+	printf("\n");
 }
