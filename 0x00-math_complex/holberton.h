@@ -4,11 +4,14 @@
 	#include <stdio.h>
 
 	/**
-	 * struct my_struct - 
-	 * @a: First member
-	 * @b: Second member
+	 * struct my_struct - complex number. 
+	 * @re: real part.
+	 * @im: imaginary part.
 	 *
-	 * Description: Longer description
+	 * Description: a struct that represents a 
+	 * complex number, it takes as a first member 
+	 * the real part and as a second member the 
+	 * imaginary part.
 	 */
 	typedef struct my_struct
 	{
@@ -17,4 +20,5 @@
 	} complex;
 
 	void display_complex_number(complex c);
+	complex conjugate(complex c);
 #endif
